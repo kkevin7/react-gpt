@@ -4,6 +4,7 @@ import {
   GptMessage,
   TypingLoader,
   TextMessageBox,
+  TextMessageBoxFile,
 } from "../../components";
 
 interface Message {
@@ -49,10 +50,14 @@ const OrthographyPage = () => {
         </div>
       </div>
 
-      <TextMessageBox
+      {/* <TextMessageBox
         onSendMessage={handlePost}
         placeholder="Escribe aquí lo que deseas"
         disableCorrections
+      /> */}
+      <TextMessageBoxFile
+        onSendMessage={handlePost}
+        placeholder="Escribe aquí lo que deseas"
       />
     </div>
   );
