@@ -1,5 +1,5 @@
 import React from 'react'
-import { MyMessage, GptMessage } from '../../components';
+import { MyMessage, GptMessage, TypingLoader } from '../../components';
 
 const OrthographyPage = () => {
   return (
@@ -10,6 +10,7 @@ const OrthographyPage = () => {
           {/* Welcome */}
           <GptMessage text="Hola, puedes escribir tu texto en español, y te ayuda con las correcciones" />
           <MyMessage text="Hola Mundo"/>
+          <TypingLoader/>
 
         </div>
       </div>
