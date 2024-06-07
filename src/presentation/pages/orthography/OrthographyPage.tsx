@@ -1,5 +1,5 @@
 import React from 'react'
-import { MyMessage, GptMessage, TypingLoader } from '../../components';
+import { MyMessage, GptMessage, TypingLoader, TextMessageBox } from '../../components';
 
 const OrthographyPage = () => {
   return (
@@ -14,6 +14,12 @@ const OrthographyPage = () => {
 
         </div>
       </div>
+
+      <TextMessageBox
+        onSendMessage={message => console.log(message)}
+        placeholder='Escribe aquí lo que deseas'
+        disableCorrections
+      />
     </div>
   )
 }
